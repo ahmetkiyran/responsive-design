@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design & Media Queries</title>
+
+    <style>
+        p{
+            display: none;
+        }
+        @media(min-width: 768px)
+        {
+            p{
+                display: block;
+            }
+        }
+        /* min-width yazmamızın sebebi büyük ekrandan göstermek istiyoruz
+        küçük ekrana geçince kaybolmasını istiyoruz 768px e gelince yani tablet ve daha altındaki 
+        cihazlarda otomatik olarak yazı kaybolur. */
+    </style>
+
+
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, itaque.</p>
+</body>
+</html>

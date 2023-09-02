@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design & Media Queries</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .conteiner{
+            max-width: 1100px;
+            margin: 0 auto; /*sağdan ve soldan ortalamak için yaptık*/
+            display: flex; /* yanyana gelebilmesi için yaptık*/
+            flex-wrap: wrap;/* kapsayıcıda alt alta gelmesi için yazdım*/
+        }
+        .box{
+            border: 1px solid black;
+            background-color: #a7a7a7;
+            padding: 10px;
+            width: 25%;
+        }
+        /*tablet*/
+        @media(max-width: 768px)
+        {
+          .box{
+            width: 50%; /*iki tanesi yanyana gelecek şekilde olsun diğerleri alta kaysın*/
+          }
+        }
+        /* phone */
+        @media(max-width:500px)
+        {
+            .box{
+            width:100%; /* her bir satırda sadece bir tanesi olacak şekilde ayarladım*/ 
+          }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="box">
+            <h1>article 1</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, neque!</p>
+        </div>
+        <div class="box">
+            <h1>article 1</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, neque!</p>
+        </div>
+        <div class="box">
+            <h1>article 1</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, neque!</p>
+        </div>
+        <div class="box">
+            <h1>article 1</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, neque!</p>
+        </div>
+    </div>
+</body>
+</html>

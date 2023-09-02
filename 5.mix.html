@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive - CSS Units</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .background{
+            background: url("./pexels-wladislawa-schröder-17963821.jpg") center center no-repeat;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column; /*alt alta getirmek için kullandık*/
+            color: #3dbead;
+            align-items: center; /*yatayda hizalamak için yaptık*/
+            padding: 5rem;
+        }
+        h1{
+            margin-bottom: 1rem; /* paragraf ile arasında mesafe açmak için yaptım*/
+            font-size: 3rem;
+        }
+        p{
+            font-size: 2rem;
+            letter-spacing: 2px; /*harf aralığı*/
+        }
+        @media(max-width:500px){
+            h1{
+                margin-bottom: 0.5rem;
+                font-size: 2rem;
+            }
+            p{
+                font-size: 1rem;
+                /* display: none; */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <h1>WELCOME TO THE SITE</h1>
+        <P>Bu benim ilk css deneyimim ve sizlerle paylaşmak istedim.</P>
+    </div>
+</body>
+</html>
